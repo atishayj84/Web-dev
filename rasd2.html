@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src ="smooth-scroll.polyfills.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		
+		#mainnav{
+			
+			transition: top 2s;
+			}
+			#mainnav a:hover{
+				color:#FCBA03;
+				}
+		a:hover {
+			color:black;
+			}
+			
+		body, html {
+		height: 100%;
+		position:relative;
+			}	
+			.margin{
+				margin-left:18%;
+				margin-right:18%;
+				}	
+		h2{
+			font-size:300%;
+		
+			}
+			h1{
+			font-size:500%;
+		color:white;
+		font-weight:700;
+		}
+			
+			#sidebar{
+				margin-top:6%;
+				 margin-left:1%;
+				position:fixed;
+				width:auto;
+				overflow:auto;
+				box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+				}
+			.content{
+				padding-top:20%;
+					}
+			
+			
+			
+			.parallax{
+				height: 100%; 
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('academics.jpg'); 
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			}
+			.vertical-center {
+			  margin: 0;
+			  position: absolute;
+			  top: 50%;
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);
+			}
+			#sidebar li{
+				padding:3% 4% 3% 4%;
+				}
+				#dropdown{
+					padding:0px;
+					}
+				#dropdown a{
+						background-color: #4a4a49;
+						color:white;
+						}
+						#dropdown a:hover{
+						background-color:#FCBA03;
+						color:black;
+						}
+				@media screen and (max-width: 1200px){
+					#sidebar li{
+						padding:1% 2% 1% 2%;
+						font-size:90%;
+						}
+					}
+				@media screen and (max-width: 900px){
+					#sidebar{	
+						display:none;
+						}
+						#mainnav{	
+						background-color:black;
+						}
+					
+					}
+					@media screen and (max-width: 600px){
+						.margin{
+							margin-left:5%;
+							margin-right:5%;
+							}
+						.content{	
+							padding-top:60%;
+							}	
+						h1{
+							font-size:400%;
+							color:white;
+							}
+							
+						}
+					#modalbutton{
+						height:60px;
+						width:auto;
+						 border-radius: 60px;
+						background-color: #2EE59D;
+						transition: all 0.3s ease 0s;
+						border:none;
+						box-shadow: 0px 5px 10px rgba(0,0,0,1);
+						}
+					#modalbutton:hover{	
+						box-shadow: 0px 10px 15px rgba(9, 214, 132, 0.4);
+						color: #fff;
+						transform: translateY(-4px);
+						}
+	</style>
+    <title>Academics</title>
+  </head>
+  <body  data-spy="scroll" data-target="#sidebar" data-offset="200" class="scrollspy-example">
+		<div>
+			<nav id="mainnav" class="navbar navbar-dark navbar-expand-md fixed-top">
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="rasd.html">Extra Curriculars </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Academics</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dummy Dropdown
+        </a>
+        <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+		  <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav></div>
+   <nav id="sidebar" class="navbar navbar-default bg-light flex-column">
+	<ul class="nav flex-column nav-pills">
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#introduction">Introduction</a>
+    </li>
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#ugcurriculum">UG Curriculum</a>
+    </li>
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#damp">DAMP</a>
+    </li>
+  </ul>
+  </nav>
+	<div class="modal fade bd-example-modal-lg" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Look at the FAQs or Ask Us!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<div class="container">
+		<h6>I have secured rank XXXX in JEE. Which branch/IIT should I opt for?</h3><br>
+		<p>Congratulations on your selection! We understand that this is an important and hard decision to make, but only you can make a judgement for yourself. However, you should keep certain factors in mind while making this decision.
+		Of course, these are all very subjective and we have only tried to give a basic guideline. </p>
+		<p><strong>1. Area of Interest</strong></p>
+		<p>Our first advice would be to carefully read ALL the information provided on this website and the individual department websites about the curriculum and course structure of ALL branches. This should help you match your interests to majors available. However, it is common for first year students to have misconceptions about branches, it is true for all of us. Engineering Physics is not all about mechanics problems, Computer Science does not only involve learning new programming languages and can involve heavy math, Electrical Engineering is not only about transistors or circuits. If you are passionate about Aerospace engineering, then you should go with it. But try to realize what is meant by passionate: designing an aircraft is a final aim which will give that satisfaction and pleasure, but you will have to solve quite a few differential equations and go through basic courses to get to that.
+		Try to gather as much information as you can and speak to people in the department to verify if your understanding of the department is in fact correct.</p>
+		<p><strong>Performance of the Department</strong></p>
+		<p>You should also try to find out how a particular department is faring in the institute of your interest. Good indicators would be the strength of faculty members, research work that goes on in the department,
+		how the courses are conducted, how are the experimental facilities, external activities/competitions that take place in the department. </p>
+		<br><br>
+		<h6><strong>Still did not get your question answered.. Message us!</strong></h6>
+		<form>
+        <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" name="name">
+    
+  </div>
+  <div class="form-group">
+    <label for="query">Query</label>
+   <textarea class="form-control" aria-label="With textarea" id="query" rows="3" name="query"></textarea>
+      </div>
+	  <div class="form-group">
+		<label for="email">Please provide your email so we can get back to you</label>
+		<input type="email" class="form-control" id="email" name="email">
+		</div>
+		</form>
+		</div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>-->
+    </div>
+  </div>
+</div>
+</div>
+		
+		<div class="parallax">
+		<div id="list-item-1" class="margin content">
+	<h1>Academics</h1>
+		<button id="modalbutton" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalLong">
+  Have a Query?
+</button>
+		
+		</div></div>
+		<br><br><br><br>
+  <div class="margin">
+  <div id="introduction"><h2><strong>Introduction</strong></h2><br>
+  <h5 style="padding-top:2%;">
+  There is a high probability that you have spent the last two or three years appreciating the beauty of physics, chemistry and math 
+  and toiling over a hoard of problems meant to drive concepts in. Your entry to IIT Bombay marks a paradigm shift in the way you view academics.
+  Academics form a central aspect of your life at IIT Bombay. Here, you are provided with a basic structure to understand your major and you get to mould your curriculum and churn the maximum out of it. You could choose to explore a breadth of courses from various streams and provide a unique perspective to your major, or you can dive to the depth of the field and become the authority in it. You can contribute to the vast body of theoretical knowledge or bridge the chasm between theory and real world applications.The faculty members here strive to expose you to the latest technological developments in the world and engage in tackling all kinds of problems. While they are going to grade you on courses, they are also open to any projects you initiate and will always be willing to discuss your ideas. 
+  The experience of studying with the best minds of the country, steps up the challenge a notch
+  .It is all about how you use the resources innovatively and carve a niche for yourself. </h5><br><br><br>
+  </div>
+  <div id="ugcurriculum">
+  <h2><strong>UG Curriculum</strong></h2><br>
+  <h5 style="padding-top:2%;">The undergraduate curriculum at IIT Bombay is modelled after the curricula of the best universities in the world,
+  and is truly one of the most exciting and versatile in India. It blends flexibility with academic rigor,
+  allowing students to take up some courses of their own choice, both within and outside their departments, 
+  apart from completing a certain minimum requirement of “core” courses. <br><br>
+  Here at IITB, the academic year is divided into two semesters, each lasting about 16 weeks.
+  Each semester, you have to complete a certain number of credits/courses. Based on your performance, you are assigned a grade at the end of each course. 
+  The weighted average of your grade points for all the courses in a particular semester gives your Semester Performance Index (SPI). 
+  The weighted average of these SPIs gives your Cumulative Performance Index (CPI). 
+  CPI gives an overall impression of your academic performance and plays an important role in course/project allotment in later semesters, not to mention internships and placements. 
+  <br><br>
+  A word of caution: According to a recent ruling, a professor is allowed to set any minimum attendance requirement (usually 80%) for his course.
+  If a student does not meet this specific requirement, the professor is fully within his/her rights to award them an ‘DX’ grade,
+  in which case they will have to repeat the course. So do make it a point to be regular in all courses.
+  In case a student is unable to achieve the minimum cut-off marks in a particular course they fail and receive an FR grade. 
+<br><br>
+Exceptional performance in a course can even earn you the highly valued AP grade in that course.
+ Awarded rarely to more than 1% of the class strength, it is a feather in a cap worth striving for. 
+ <br><br>
+  The most exciting part of the system, for the academically-inclined, is the concept of Minors & Honours. Starting from third semester
+  , you will be allowed to take up courses in any discipline that you might happen to be interested in (say, Electrical Engineering or Biology).
+  You can earn a Minor in specific discipline by doing a certain number of extra courses in that discipline.
+  Be warned that registration for Minor courses, particularly in ‘popular’ departments, is very competitive, with a seat-cap on all courses.
+  If you are serious about your Minor ambitions, then be on your toes and maintain a good CPI right through your degree programme! 
+  <br><br>
+  Dual Degree students, in addition, must have a CPI of more than 8.0 and zero backlogs in order to be allowed to register for Minor courses,
+  as they already have an extra ‘DD elective’ course to complete in addition to the core courses, from second year onwards. 
+  The B.Tech students too have the option of completing a certain number of these elective courses in their own department and earn a ‘B.Tech. with Honours’ degree. Honour courses are highly recommended, they’re usually a lot more interesting and fun than the regular ones! 
+<br><br>
+Finally, if you happen to have any backlog(s), you will have to repeat (and this time around, hopefully pass) the course(s).
+ Typically, one-tenth of the class fails every course. 
+
+	</h5><br><br><br>
+  </div>
+   <div id="damp">
+ <h2><strong>DAMP</strong></h2><br>
+  <h5 style="padding-top:2%;">
+	Departmental Academic Mentorship Program is an attempt by SMP to provide a helping 
+	hand available to students who aren't freshmen any more, with their academics.The program consists of highly motivated senior students
+	from each department to act as mentors for a set of junior students and help them cope
+	with any academic problems they may face in the department or otherwise. <br><br>
+
+Freshman year has common courses for all departments, except a Department Introductory Course. 
+As in the future years, there are more of department specific courses and electives, 
+and students may need assistance maneuvering their way through these. With this in mind, all sophomore are provided with a DAMP mentor. 
+Mentors are also provided for any students with backlogs after sophomore year. 
+The mentoring relationship provides an opportunity for development, both for the mentors and the students (mentee), thus being mutually beneficial.<br><br>
+
+SMP is a close knit team with the SMPCs at the top with a cabinet of six people to work with the different verticals under the SMP.
+ Two Cabinet Head members lead a group of DAMP Coordinators (DAMPCs). Each department has one or two DAMPCs.
+ The DAMPCs head a group of mentors who then come in contact with the students who need them (mentees).
+ It is a purely voluntary program meant to pass on the experience, advice and techniques of managing academics through the generations <br><br>
+ 
+ DAMP attempts to make the academic life of all students in the institute easier,
+ and makes sure those who require support never lack in it whatever year of your programme you might be in. 
+
+</h5>
+
+<br><br><br>
+ </div> </div>
+<script type="text/javascript">
+	
+	var scroll = new SmoothScroll('a[href*="#"]');
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+	 document.getElementById("mainnav").style.backgroundColor="black";
+				}
+	else{
+			document.getElementById('mainnav').style.backgroundColor = "";
+			document.getElementById('mainnav').style.opacity = "";}
+			}	
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

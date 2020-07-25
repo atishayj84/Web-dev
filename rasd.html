@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+	 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src ="smooth-scroll.polyfills.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+		#mainnav a:hover{
+				color:#FCBA03;
+				}
+				 
+		#mainnav{
+			
+			transition: top 2s;
+			}
+		a:hover {
+			color:black;
+			}
+			
+		body, html {
+		height: 100%;
+		width:100%
+		position:relative;
+			}	
+			.margin{
+				margin-left:18%;
+				margin-right:18%;
+				}	
+		h1{
+			font-size:500%;
+			color:white;
+			}
+			#sidebar{
+				margin-top:6%;
+				 margin-left:1%;
+				position:fixed;
+				width:10%;
+			
+				overflow:auto;
+				box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+				}
+			.content{
+				padding-top:15%;
+					}
+			.parallax{
+					height: 90%; 
+					background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('sports1.jpeg');
+					}
+			.parallax1{
+				background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('technical1.jpeg');
+				height: 90%;
+				
+				}
+			.parallax2{	
+				background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cult1.jpeg');
+				height: 90%;
+				
+				}
+			.parallax, .parallax1, .parallax2{
+				 /* Create the parallax scrolling effect */
+				  
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			}
+			.vertical-center {
+			  margin: 0;
+			  position: absolute;
+			  top: 50%;
+			  -ms-transform: translateY(-50%);
+			  transform: translateY(-50%);
+			}
+			#sidebar li{
+				padding:3% 4% 3% 4%;
+				}
+				#dropdown{
+					padding-top:0px	;
+					padding-bottom:0px;
+					}
+				#dropdown a{
+						background-color: #4a4a49;
+						color:white;
+						}
+						#dropdown a:hover{
+						background-color:#FCBA03;
+						color:black;
+						}
+				@media screen and (max-width: 1200px){
+					#sidebar li{
+						padding:1% 2% 1% 2%;
+						font-size:90%;
+						}
+					}
+				@media screen and (max-width: 900px){
+					#sidebar{	
+						display:none;
+						}
+					#mainnav{	
+						background-color:black;
+						}
+					}
+					@media screen and (max-width: 600px){
+						.margin{
+							margin-left:5%;
+							margin-right:5%;
+							}
+						h1{
+						font-size:400%;
+						}	
+						}
+					
+					
+	</style>
+    <title>Extra Curriculars</title>
+  </head>
+  <body  data-spy="scroll" data-target="#sidebar" data-offset="60" class="scrollspy-example">
+		
+		<!-- NAVBAR TOP-->
+		<div>
+			<nav id="mainnav" class="navbar navbar-dark navbar-expand-md fixed-top">
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Extra Curriculars </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="rasd2.html">Academics</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dummy Dropdown
+        </a>
+        <div id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+		  <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+</nav></div>
+		<!-- SIDEBAR-->
+   <nav id="sidebar" class="navbar bg-light flex-column">
+	<ul class="nav flex-column nav-pills">
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#list-item-1">Sports</a>
+    </li>
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#list-item-2">Technical Activities</a>
+    </li>
+    <li class="nav-item">
+      <a data-scroll class="nav-link scroll-link" href="#list-item-3">Culturals</a>
+    </li>
+	
+  </ul>
+  </nav>
+		
+		
+
+		<!-- WEBSITE CONTENT-->
+		<div class="parallax">
+		<div id="list-item-1" class="margin content">
+  <h1><center>Sports at IIT Bombay</center></h1>
+  
+  </div></div>
+  <h5 class="margin" style="padding-top:2%;"><strong>Introduction</strong><br>
+  Excellence in sports is a direct index of the stature and intellectual maturity of an institute. 
+  IIT Bombay has always aimed to set a precedent for other institutions by laying utmost emphasis on the multifaceted development of its students and pushing them to raise the bar by striving to be ‘Citius, Altius, Fortius’. 
+  With a deeply ingrained sports culture and the ‘Right of Sports for all’ as a cornerstone of its Sports policy, the institute has, over the years, channelized its resources towards the development of a state of the art sporting complex that caters to over fourteen sports. 
+  All the facilities are helmed by seasoned training staff so that even beginners have a beautiful chance to learn the craft and their more experienced counterparts
+  can receive the requisite guidance.</p><br>
+  <h5 class="margin" style="padding-top:2%;"><strong>Sports for everyone</strong><br>
+	A passion for sports has always been a part of the very fabric of the institute. 
+	To ensure a healthy continuity of this tradition the Sports Council organises a multitude of sports and fitness camps 
+	that vary in the degree of professionalism (amateur, intermediate or advanced) as well as the rigour of instruction. 
+	Moreover, to keep with dynamically evolving exercise regimens, workshops on modern forms like Zumba,
+	Mixed Martial Arts and AquaYoga and target specific weight loss camps are conducted. And to satisfy the cravings of the 
+	adventure streak in all of us, there are regular excursions to the Himalayas, daunting treks and adrenaline pumping sports like rafting,
+	rock climbing and mountaineering, with scuba diving plans in the pipeline. <br><br>
+The Government of India, through the National Sports Organisation, mandates that all incoming freshmen must undergo a structured training in a sport of their choice.
+ At IIT Bombay, NSO forms an integral part of the curriculum and classes are offered in sports with biweekly instruction.
+</h5>
+  <div class="parallax1" style="margin-top:50px;">
+  <div id="list-item-2" class="margin content">
+  <h1><center>Technical Activities at IIT Bombay</center></h2>
+  </div></div>
+  <h5 class="margin" style="padding-top:2%;">Broken that toy to see how that spring worked? Unscrewed that FM receiver trying to make sense of how it works?
+  Remember the sense of elation reading 'Hello World' on the screen? You are not alone. From circuit benders to stargazers, we have them all!<br><br> 
+Technical Activities (or Tech) will provide you with an opportunity to put the theoretical knowledge gained in classrooms into practical use. 
+Tech@IITB will enthrall and excite, and enthuse you to build, to create something of your own. After all, isn’t that why most of you are here? 
+  </h5>
+  <div class="parallax2" style="margin-top:50px;">
+  <div id="list-item-3" class="margin content">
+  <h1><center>Cultural activities at IIT Bombay</center></h2>
+  </div></div>
+ 
+  
+  <h5 class="margin" style="padding-top:2%;">So you thought it was all about academics? Wrong! 
+  IITB is privileged to have one of the best cultural (or 'cult') scenes among engineering colleges in India.
+  Apart from hosting Mood Indigo, India's biggest college cultural festival, we have a very active intra-college scene, with genre specific clubs and plenty of hostel and insti-level events all year round. The scene is basically split into 10 genres:
+  Music, Photography & Fine Arts, Speaking/Debating, Literary Arts, Photography & Fine Arts, Dance, Dramatics, Film & Media, Design and Lifestyle. </h5>
+ <br><br><br>
+ 
+<script type="text/javascript">
+	
+	var scroll = new SmoothScroll('a[href*="#"]');
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40){
+	 document.getElementById("mainnav").style.backgroundColor="black";
+				}
+	else{
+			document.getElementById('mainnav').style.backgroundColor = "";
+			document.getElementById('mainnav').style.opacity = "";}
+			}	
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
